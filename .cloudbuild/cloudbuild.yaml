@@ -30,7 +30,7 @@ steps:
       terraform plan
 
 ##### Terraform apply #####
-- id: 'tf plan'
+- id: 'tf apply'
   name: 'hashicorp/terraform:0.14.9'
   entrypoint: 'sh'
   args:
