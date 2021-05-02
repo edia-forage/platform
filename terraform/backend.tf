@@ -9,7 +9,7 @@ terraform {
     }
 
     backend "gcs" {
-        credentials = "sa-terraform.json"
+        #credentials = "sa-terraform.json"
         bucket  = "neon-polymer-366-tfstate"
         prefix  = "terraform/state"
     }

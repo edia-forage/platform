@@ -32,4 +32,4 @@ override.tf.json
 .terraform.lock.hcl
 
 # Service Account key file for local testing
-sa-terraform.json
+#sa-terraform.json
