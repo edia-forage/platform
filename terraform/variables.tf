@@ -23,3 +23,8 @@ variable "zone" {
 variable "gke_name_suffix" {
     type        = "string"
 }
+
+variable "k8s_master_allowed_ip" {
+  type        = "string"
+  description = "Kubernetes cluster master's external IP is only accessible from this IP"
+}
