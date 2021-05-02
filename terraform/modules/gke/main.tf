@@ -14,11 +14,19 @@ resource "google_compute_network" "gke_network" {
     auto_create_subnetworks = "false"
 }
 
+resource "google_compute_subnetwork" "gke_subnetwork" {
+    name                    = "${var.network_name}-subnetwork"
+    ip_cidr_range           = "10.2.0.0/16"
+    region                  = "${var.region}"
+    network                 = "${google_compute_network.gke_network.id}"
+}
+
 resource "google_container_cluster" "gke_cluster" {
     #provider                    = "google-beta"
     min_master_version          = "${data.google_container_engine_versions.gke_versions.latest_master_version}"
     name                        = "gke-cluster-${var.gke_name_suffix}"
     network                     = "projects/${data.google_project.project.project_id}/global/networks/${google_compute_network.gke_network.name}"
+    subnetwork                  = "${google_compute_subnetwork.gke_subnetwork.self_link}"
 
     remove_default_node_pool    = "true"
 

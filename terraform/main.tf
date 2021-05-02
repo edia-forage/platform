@@ -9,5 +9,5 @@ module "gke" {
     k8s_master_allowed_ip   = "${var.k8s_master_allowed_ip}"
     node_count              = "1"
     machine_type            = "n1-standard-1"
-
+    region                  = "${var.region}"
 }
