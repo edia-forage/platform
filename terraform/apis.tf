@@ -11,4 +11,5 @@ resource "google_project_service" "service" {
 
     service = each.key
     project = var.project_id
+
 }
