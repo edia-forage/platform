@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "neon-polymer-366",
+  "private_key_id": "81fb592fda512cec90dbea2b78a91554d9fbb112",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC2OsBlBTlak5S1\nKh/yerYmjuwpj+4U5p9uvASE37NyNdAAYWZQjWmkFAkS+6s0nxfUQOo0ID6/1XNa\ndS3F0NMfzDvlxIy+bJx0K7iFi/15dh+09uQmTUwECDZNA8e4p+oXj80iED7ZRpF1\n205MTgv26cLnKbNo9IXK0uA+Qn1vYokTH+yrci0CT9oJXCKFwJuM/lVrUZ43H8ay\nFmHMSzYSB2ZseV588G0o2YVGTMAUGihIFvjtdM9s6aPAEmR1w/D1jZO1FpI6oVHB\nY0Py4CrF0jqcKxXv11hqoHnPk4ZuqDkmSdsIQwvurjtEIrKuyzb3ci0s/J721tZV\nqhqw1AhNAgMBAAECggEAE52OYTFnQ5M4QioHJ1RDMDJZRH4MPC65AbP2bpEf4U7e\nlXPmjgwyz2kisurpOnBXoc7dBwBjkMW6tYWAiFcaqsUSu4BlQAgz7SNZqPJxNfZb\nomCjHWZbpOF3auHZyUw13BRsGdsS0NOSS9PwATGzgwAVrUllWQpdLoB1h+4jT25m\n3lpmhfmlOBlGwVW6NckojUIY0KjiFneRipaYjJcq89lYJpjl2yfPaKL182Wyuj4A\nEg45Uj4yLer+Oopp+RNaabbcfIc25WpKh2bf1k/B1ZsZMDLxSOKMvuqRiLLsdf2N\noPGapceWPqtmCgtuWuk3C2gF2jG9iNyQuzV9fw7WNwKBgQDbvRnIsUFq8jsPfOc+\nIyBfryStTzYwh4M/dvCp0CPZ7FNNKpBg8FS1btGbi3FoD78ohaY7+Dps4GiFPhGK\n0T4PkaxrEhNPghH4oVa24/QyIZOEn8MproPsHHx/brh4skwsHC87a3uyLybbpcTJ\n5CvDCBiPVwmcdyNRqPpUA5Su4wKBgQDUTRGqr6pDrYn0h+cqCpNgFgB7rtDh0N1S\nXt5n8WwpgWm02SRu7pUObDt1TVmECaCSWLO2t6nQFS4jqN0RnmDZGH9e+7/72BHv\njcWiQyyh/RnLXhKgXPvoXCxFmHOpKgrQXVL6ERN72bS+xSkmIB3wff/Pb02Bhj9t\nPXilU1RjDwKBgQDTG7sQ0BMMX0oUmChFz1OD+e1fv/FM8HRM3cVbMAexj1V8ln79\nUwffA2fHa1F561743GYXyWTAQ1zHXhlWZ66bIJYoi8YXpdwEJWT88sYh/5YNXbwP\naIV/quKFP2dlNc7utek+ygWd66UGcx075cWRa07FL5ahRuicxJ4zZvlKhwKBgAIc\nsixMixkZROIV6ArXCBhQn7ibSKC2fz0ujG/kSvsuump+Loqb/QejtAO6vUU/A0Xx\nc/hBY4MactcP+wMN3FDMmZfMUWCkCamkc27l1C/YYMVRLkZCJo9tO1OF7MCmFm10\nQDsUqGj3BYFQXNRwRVv7JOxfYxoCx+bCUczzQ0epAoGBALVfN8J3AxrkN/M5I+zR\nhm5SbgsyhOuAvCI+b0MgTx4pIyINE5Y6G9tfygYEWJ5YBeOFo6zlR7kdNVRoGAm7\nfJqENMwrfmQ8hDgZhYjBrWmUKDDMhJfSO/CdXpvjpF7gOlIcognw7o8zt1oniUjp\nY38lG+xUQBx67QFJ1DxhMFab\n-----END PRIVATE KEY-----\n",
+  "client_email": "sa-terraform@neon-polymer-366.iam.gserviceaccount.com",
+  "client_id": "101706667715302157291",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sa-terraform%40neon-polymer-366.iam.gserviceaccount.com"
+}

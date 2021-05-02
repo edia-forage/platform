@@ -1,0 +1,44 @@
+steps:
+- id: 'branch name'
+  name: 'alpine'
+  entrypoint: 'sh'
+  args:
+  - '-c'
+  - |
+      echo "***************************************"
+      echo "Currently on branch - ${BRANCH_NAME}"
+      echo "***************************************"
+
+##### Terraform init #####
+- id: 'tf init'
+  name: 'hashicorp/terraform:0.14.9'
+  entrypoint: 'sh'
+  args:
+  - '-c'
+  - |
+      cd terraform
+      terraform init
+
+##### Terraform plan #####
+- id: 'tf plan'
+  name: 'hashicorp/terraform:0.14.9'
+  entrypoint: 'sh'
+  args:
+  - '-c'
+  - |
+      cd terraform
+      terraform plan
+
+##### Terraform apply #####
+- id: 'tf apply'
+  name: 'hashicorp/terraform:0.14.9'
+  entrypoint: 'sh'
+  args:
+  - '-c'
+  - |
+      if [[ "${BRANCH_NAME}" == "develop" ]]; then
+        cd terraform
+        terraform apply -auto-approve
+      else
+        echo "Wont apply since not develop branch, Please merge to develop to apply"
+      fi
