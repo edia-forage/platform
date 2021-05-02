@@ -14,21 +14,4 @@ terraform {
         prefix  = "terraform/state"
     }
 }
-
-provider "google" {
-
-  #credentials = file("sa-terraform.json")
-  credentials = file(var.credentials_file)
-
-  #project = "neon-polymer-366"
-  project = var.project_id
-
-  region  = "us-central1"
-  #region = var.region
-
-  zone    = "us-central1-c"
-  #zone = var.zone
-
-  //version = ">= 2.0.0"
-}
     

@@ -16,7 +16,7 @@ steps:
   args:
   - '-c'
   - |
-      cd terraform/k8s
+      cd terraform
       terraform init
 
 ##### Terraform plan #####
@@ -26,7 +26,7 @@ steps:
   args:
   - '-c'
   - |
-      cd terraform/k8s
+      cd terraform
       terraform plan
 
 ##### Terraform apply #####
@@ -37,8 +37,8 @@ steps:
   - '-c'
   - |
       if [[ "${BRANCH_NAME}" == "develop" ]]; then
-        cd terraform/k8s
-        terraform apply
+        cd terraform
+        terraform apply -auto-approve
       else
         echo "Wont apply since not develop branch, Please merge to develop to apply"
       fi
