@@ -11,3 +11,18 @@ module "gke" {
     machine_type            = "n1-standard-1"
     region                  = "${var.region}"
 }
+
+data "google_secret_manager_secret_version" "db_password" {
+  secret = "forage_cloud_sql_db_password"
+}
+
+module "cloud_sql" {
+
+    source                  = "./modules/cloud_sql"
+
+    network                 = "${module.gke.network}"
+    region                  = "${var.region}"
+    username                = "gke-${var.gke_name_suffix}"
+    password                = "${data.google_secret_manager_secret_version.db_password.secret_data}"
+    db_name                 = "gke-${var.gke_name_suffix}"
+}
