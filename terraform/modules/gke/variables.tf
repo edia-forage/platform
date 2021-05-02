@@ -23,3 +23,7 @@ variable "machine_type" {
   default = "n1-standard-1"
   type    = "string"
 }
+
+variable "region" {
+  type = "string"
+}
