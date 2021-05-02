@@ -2,9 +2,9 @@ variable "project_id" {
     default = "neon-polymer-366"
 }
 
-variable "credentials_file" { 
-    default = "sa-terraform.json"
-}
+// variable "credentials_file" { 
+//     default = "sa-terraform.json"
+// }
 
 variable "region" {
   default = "asia-south1"
