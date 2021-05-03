@@ -14,3 +14,7 @@ output "password" {
   value     = "${google_sql_user.app_user.password}"
   sensitive = true
 }
+
+output "sql_connection_name" {
+    value   = "${google_sql_database_instance.instance.connection_name}"
+}
