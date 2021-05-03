@@ -11,3 +11,6 @@ Merge to the develop branch triggers the Kubernetes deployment
 ## References
 https://cloud.google.com/architecture/managing-infrastructure-as-code
 https://github.com/epiphone/gke-terraform-example
+## Known Issues
+### Terraform deployment times out while creating SQL instance
+Import the state manually - terraform import module.cloud_sql.google_sql_database_instance.instance projects/{{project_name}}/instances/{{instance_name}}

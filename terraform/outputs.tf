@@ -9,3 +9,7 @@ output "cluster_name" {
 output "image_url" {
   value = "${module.gke.image_url}"
 }
+
+output "sql_connection_name" {
+  value = "${module.cloud_sql.sql_connection_name}"
+}
