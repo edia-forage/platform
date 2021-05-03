@@ -60,8 +60,8 @@ resource "google_container_cluster" "gke_cluster" {
 
     # Enable alias IP addresses https://cloud.google.com/kubernetes-engine/docs/how-to/alias-ips
     ip_allocation_policy {
-        cluster_ipv4_cidr_block     = ""
-        services_ipv4_cidr_block    = ""            
+        cluster_ipv4_cidr_block     = "/14"
+        services_ipv4_cidr_block    = "/19"            
     }
 
     lifecycle {
