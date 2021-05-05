@@ -37,9 +37,13 @@ resource "google_container_cluster" "gke_cluster" {
     }
 
     private_cluster_config {
-        master_ipv4_cidr_block  = "172.16.0.0/28"
-        enable_private_nodes    = true
-        enable_private_endpoint = true
+        #master_ipv4_cidr_block  = "172.16.0.0/28"
+        enable_private_nodes    = false
+        enable_private_endpoint = false
+
+        master_global_access_config {
+            enabled = true
+        }
     }
 
     ## Disable Basic Auth
